@@ -4,3 +4,4 @@
 ## Great Notes
   - [蛋餅的競程筆記](https://omeletwithoutegg.github.io/)
   - [YuiHuang學習筆記](https://yuihuang.com/)
+  - [CP Algorithm](https://cp-algorithms.com/)
