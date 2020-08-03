@@ -17,9 +17,9 @@ void modify(int pos,int x){
 	pos += N;
 	Tree[pos] = x;
 	for(;pos > 1;pos/=2){
-		// pos ^ (XOR) 1 ==> 旁邊的節點 
+		// pos ^ (XOR) 1 ==> 旁邊的節點
 		Tree[pos/2] = max(Tree[pos],Tree[pos^1]);
-	} 
+	}
 }
 int query(int L,int R){
 	if(L==R)return Tree[L+N-1];
@@ -51,7 +51,7 @@ int main(){
 	while(Q--){
 		int askL , askR ;
 		cin >> askL >> askR ;
-		cout << query(askL,askR) << endl; 
+		cout << query(askL,askR) << endl;
 	}
 	//for(int i=1;i<=2*N;i++)cout << Tree[i] << " ";
 	return 0;

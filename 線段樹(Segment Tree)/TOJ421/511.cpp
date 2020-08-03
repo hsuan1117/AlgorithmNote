@@ -1,7 +1,3 @@
-# 遞迴版本線段樹
-  * TOJ 421
-  * Author : 511
-```cpp
 #include<bits/stdc++.h>
 using namespace std;
 int N,T;
@@ -40,4 +36,3 @@ int main(){
     }
     return 0;
 }
-```

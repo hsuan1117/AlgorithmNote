@@ -1,7 +1,3 @@
-# Struct 版本線段樹
-  * TOJ 421
-  * Author : Jonason Chang
-```cpp
 #include<bits/stdc++.h>
 #define pb push_back
 #define pii pair<int,int>
@@ -10,18 +6,18 @@
 #define ll long long
 #define Mod 1000000007
 using namespace std;
- 
+
 int x1,x2,n,q,ptr=1;
 ll a[100000],ans;
 struct Segment{
     int ls,rs;
     ll _max;
 }seg[4*100000];
- 
+
 void build(int l,int r,int idx){
     if(l==r){
         seg[idx]._max = a[l];
-        return; 
+        return;
     }
     int m = (l+r)>>1;
     int cl = seg[idx].ls = ptr++;
@@ -39,7 +35,7 @@ void query(int l,int r,int idx){
     if(x1<=m)query(l,m,seg[idx].ls);
     if(x2>m)query(m+1,r,seg[idx].rs);
 }
- 
+
 int main(){
     cin >> n >> q;
     for(int i=0;i<n;i++)cin >> a[i];
@@ -54,4 +50,3 @@ int main(){
     }
     return 0;
 }
-```
