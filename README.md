@@ -10,4 +10,4 @@
   - [蛋餅的競程筆記](https://omeletwithoutegg.github.io/)
   - [YuiHuang學習筆記](https://yuihuang.com/)
   - [CP Algorithm](https://cp-algorithms.com/)
-  https://hackmd.io/i77ZWuBqROGdQ-EDP6EPLw?edit
+  - https://hackmd.io/i77ZWuBqROGdQ-EDP6EPLw?view
